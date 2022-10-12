@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form - Ceridian</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="action_page.php" method="post">
+            <h1>Feedback Form</h1>
+            <div class="container">
+                <div class = "boxes">
+                    <p id = "labels">Name</p>
+                    <input type="text" placeholder="Enter Your Name" name="name" required>
+                </div>
+
+                <div class = "boxes">
+                    <p id = "labels">Email</p>
+                    <input type="email" placeholder="Enter Your Email" name="email" required>
+                </div>
+
+                <div class = "boxes">
+                    <p id = "labels">Choose Your Department</p>
+                    <select id = "dropdown">
+                      <option value="0">Product and Technology</option>
+                      <option value="1">Customer Support</option>
+                      <option value="2">Human Resource</option>
+                      <option value="3">Other</option>
+                    </select>
+                </div>
+
+                <div id = "boxes">
+                    <p id = "labels">Rate your experience at Ceridian so far</p>
+                    <input type="radio" id="radioButtons" name = "experience" value="1">
+                    <label id = "rate">1</label>
+                    <input type="radio" id="radioButtons" name = "experience" value="2">
+                    <label id = "rate">2</label>
+                    <input type="radio" id="radioButtons" name = "experience" value="3">
+                    <label id = "rate">3</label>
+                    <input type="radio" id="radioButtons" name = "experience" value="4">
+                    <label id = "rate">4</label>
+                    <input type="radio" id="radioButtons" name = "experience" value="5">
+                    <label id = "rate">5</label>
+                </div>
+
+                <div id = "boxes">
+                    <p id = "labels">Suggest on what can be improved at Ceridian</p>
+                    <div><input type="checkbox">
+                    <label id="suggestions">More labs/assigments</label></div>
+                    <div><input type="checkbox">
+                    <label id="suggestions">More Self Learning Sessions</label></div>
+                    <div><input type="checkbox">
+                    <label id="suggestions">More Food (Especially Pizza)</label></div>
+                    <div><input type="checkbox">
+                    <label id="suggestions">More Complex Training Sessions</label></div>
+                    <div><input type="checkbox">
+                    <label id="suggestions">Less Complex Training Sessions</label></div>
+                </div>
+
+                <div id = "boxes">
+                    <p id = "labels">Other Comments</p>
+                    <textarea id = "comments" name="comments" id="comments">
+                    </textarea>
+                </div>
+                
+                <div id = "boxes">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+          </form>
+    </body>
+</html>
